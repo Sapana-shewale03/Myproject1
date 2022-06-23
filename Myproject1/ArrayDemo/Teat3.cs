@@ -298,6 +298,58 @@ namespace Myproject1.ArrayDemo
             Console.WriteLine();
         }
     }
+    /////10.ERROR
+    ///11 REPLACE ALLZEROS WITH ONE[26,0,67,450,78,54,34,10,0,34]
+    class ReplaceZeroWithOne
+    {
+        static void Main(string[] args)
+        {
+            int[] a = { 26, 0, 67, 45,0, 78, 54, 34, 10, 0, 34 };
+            Console.WriteLine(string.Join(" ",a));
+            for(int i=0;i<a.Length;i++)
+            {
+                if (a[i] == 0)
+                {
+                    int rev = a[i];
+                    a[i] = 1;
+                }
+            }
+            Console.WriteLine(string.Join(" ",a));
+        }
+    }
+   ////12 50 array buzz fizz and buzzfizz
+   class buzzfizz
+    {
+        static void Main(string[] args)
+        {
+            int count = 0, count1 = 0, count2 = 0;
+            for (int i = 0; i < 50; i++)
+            {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("Buzzfizz");
+                    count++;
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("buzz");
+                    count1++;
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("fizz");
+                    count2++;
+                }else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.WriteLine("buzz printed "+count);
+            Console.WriteLine("fizz printed "+count1);
+            Console.WriteLine("buzzfizz printed "+count2);
+
+        }
+    }
 
 }
 

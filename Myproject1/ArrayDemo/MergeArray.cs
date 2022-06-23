@@ -9,8 +9,8 @@ namespace Myproject1.ArrayDemo
         static void Main(string[] args)
         {
 
-        int[] a = { 2, 4, 6, 7, 2, 9 };
-        int[] b = { 12, 23, 56, 76, 95 };
+        int[] a = { 2, 23, 6, 7, 2, 9 };
+        int[] b = { 12, 23, 56,56, 95 };
         int[] c = new int[a.Length + b.Length];
         int j = 0;
             int count1 = 6;
