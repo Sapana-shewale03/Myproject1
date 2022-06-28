@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <startupobject>Myproject1.stringDemos.Reverseeachwordstring</startupobject>
+	  <startupobject>Myproject1.ArrayDemo.frequencyele</startupobject>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="array_string\" />

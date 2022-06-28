@@ -181,7 +181,7 @@ namespace Myproject1.ArrayDemo
     {
         static void Main(string[] args)
         {
-            int[] a = { 2, 34, 5, 6, 7 };
+            int[] a = { 2,4,34,5,6,4};
             Console.WriteLine(string.Join(" ",a));
             for(int i=0;i<a.Length;i++)
             {

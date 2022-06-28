@@ -122,8 +122,12 @@ namespace Myproject1.stringDemos
             string[] m = s.Split(" ");
             for (int i = 0; i < m.Length; i++)
             {
-                    Console.WriteLine(m[i]);
-            }
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(" "+m[j]);
+                }
+                Console.WriteLine(" ");
+            } 
 
         }
     }

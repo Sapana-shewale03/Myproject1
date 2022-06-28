@@ -157,7 +157,6 @@ namespace Myproject1.ArrayDemo
     /////6.remove duplcate eelments from aray
     class Duplicatearr
     {
-
         static void Main(string[] args)
         {
             int[] a = new int[6];
@@ -200,7 +199,7 @@ namespace Myproject1.ArrayDemo
             Console.WriteLine("***********");
             for (int i = 0; i < s; i++)
             {
-                Console.WriteLine(final[i]);
+                Console.WriteLine(" SINGLE EELMENT IS "+final[i]);
             }
             Console.ReadLine();
         }
