@@ -63,7 +63,7 @@ namespace Myproject1.loops
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("english alphabets if ypu want to print capital them press 1 ");
+            Console.WriteLine("english alphabets if ypu want to print capital them press 1 or anything for small letterrs ");
             int n = Convert.ToInt32(Console.ReadLine());
             if (n != 1)
             {
@@ -117,13 +117,14 @@ namespace Myproject1.loops
             int n = Convert.ToInt32(Console.ReadLine());
             int m = 1;
             int a = n;
-
-            while (a > 10)
+            int count = 1;
+           for(int i=0;i<=a;i++)
             {
-                a = (a / 10);
-
+                m = (a % 10);
+                a = a / 10;
+                count++;
             }
-            Console.WriteLine(m);
+            Console.WriteLine(count);
         }
     }
     class productofdigit
@@ -172,13 +173,8 @@ namespace Myproject1.loops
                 {
                     Console.WriteLine(i);
                 }
-                isPrime = false;
             }
-            Console.ReadLine();
-
         }
-
-
     }
 
     /// prg to write a table of given number

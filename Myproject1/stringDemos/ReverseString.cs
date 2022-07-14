@@ -28,13 +28,21 @@ namespace Myproject1.stringDemos
             Console.WriteLine("enter string  ");
             string str = Console.ReadLine();
             char[] ch = str.ToCharArray();
-
+            string rev = "";
             string reverse = "";
             for (int i = 0;i<str.Length;i++)
             {
                 reverse = str[i]+reverse;
             }
             Console.WriteLine(reverse);
+            Console.WriteLine();
+            string[] s = str.Split(" ");
+            for (int i = 0; i < str.Length; i++)
+            {
+               rev = ch[i] + rev;
+            }
+            Console.WriteLine(rev);
+
         }
     }
     /////reverse each only on strng

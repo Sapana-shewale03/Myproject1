@@ -9,6 +9,7 @@ namespace Myproject1.loops
        public static void Main(string[] args)
         {
             int r =0, rev=0;
+            Console.WriteLine("enter any number");
             int n = Convert.ToInt32(Console.ReadLine());
             while(n > 0)
             {

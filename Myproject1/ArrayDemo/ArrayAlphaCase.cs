@@ -8,7 +8,8 @@ namespace Myproject1.ArrayDemo
     {
         static void Main(string[] args)
         {
-            char[] ch = new char[6];
+            Console.WriteLine("enter any charater");
+            char[] ch = new char[1];
             string aplh = ""; string aplh1 = "";
             for (int i = 0; i < ch.Length; i++)
             {
@@ -36,9 +37,10 @@ namespace Myproject1.ArrayDemo
             string rev = "";
             Console.WriteLine("enter any string");
             string str = Console.ReadLine();
-            //string[] s = str.Split(" ")
+            //string[] s = str.Split(" ");
             for (int i =str.Length-1;i>=0; i--)
             {
+               // int rev = rev % 10;
                 rev = str[i] + rev;
             }
               if (str == rev)
