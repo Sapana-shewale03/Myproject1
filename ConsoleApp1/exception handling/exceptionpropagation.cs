@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Myproject1.exception_handling
+namespace Advancecsharp.exception_handling
 {
     class exceptionpropagation
     {

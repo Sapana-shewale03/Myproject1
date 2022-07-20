@@ -37,15 +37,16 @@ namespace Myproject1.ArrayDemo
             string rev = "";
             Console.WriteLine("enter any string");
             string str = Console.ReadLine();
-            //string[] s = str.Split(" ");
+           // string[] s = str.Split(" ");
             for (int i =str.Length-1;i>=0; i--)
             {
-               // int rev = rev % 10;
-                rev = str[i] + rev;
+             //  int rev = rev % 10;
+                rev = rev+ str[i];
             }
+            Console.WriteLine(rev);
               if (str == rev)
               {
-                Console.WriteLine("number is palindrom");
+                Console.WriteLine("string is palindrom");
               }
             else
             {

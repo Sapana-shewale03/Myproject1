@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <startupobject>Myproject1.Collections.Linked_List</startupobject>
+	  <startupobject>Myproject1.demo</startupobject>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="array_string\" />

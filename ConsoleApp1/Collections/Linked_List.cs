@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Myproject1.Collections
+namespace Advancecsharp.Collections
 {
     class Linked_List
     {
@@ -18,7 +18,7 @@ namespace Myproject1.Collections
             foreach(string data in ll)
                 Console.WriteLine(data);
 
-            LinkedList<int> lll = new LinkedList<int>();
+            LinkedList<int> lll = new LinkedList<int>() ;
             lll.AddLast(100);
             lll.AddLast(200);
             lll.AddLast(300);

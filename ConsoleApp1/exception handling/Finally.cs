@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-namespace Myproject1.exception_handling
+namespace Advancecsharp.exception_handling
 {
     class Finally
     {

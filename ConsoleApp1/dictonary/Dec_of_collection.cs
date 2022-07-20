@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Myproject1.Collections
+namespace Advancecsharp.Collections
 {
     class Dec_of_collection
     {
@@ -20,6 +20,10 @@ namespace Myproject1.Collections
 
            lst.Remove(300);
 
+            lst.RemoveAll(item => item == 300);
+            // lst.RemoveAt(2);
+            //  lst.RemoveRange(1,3);
+           // lst.Reverse();
             lst[0] = 1000;
             lst.IndexOf(2,3000);
             Console.WriteLine(lst.Count);
