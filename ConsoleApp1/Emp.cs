@@ -10,20 +10,20 @@ namespace Advancecsharp
     {
         int eid;
         string ename;
-        public Emp(int eid, string ename)
+        public Emp(int Eid, string Ename)
         {
-            this.eid = eid;
-            this.ename = ename;
+            this.eid = Eid;
+            this.ename = Ename;
 
         }
 
-        static void Main(string[] args)
+        public override string ToString()
         {
-            //  Deptempcont d = new Deptempcont(1, "Diksha");
-            Emp em = new Emp(1, "Disha");
-            Console.Write(em.eid + "emp name:" + em.ename);
-
+            return "emp id  :" + eid+" emp name "+ename;
         }
+        public int Eid  { get => eid; set => eid = value; }
+        public string Ename { get => ename; set => ename = value; }
+
     }
     class customfordict
     {

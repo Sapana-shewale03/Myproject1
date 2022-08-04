@@ -181,7 +181,7 @@ namespace Myproject1.ArrayDemo
     {
         static void Main(string[] args)
         {
-            int[] a = { 2,4,34,5,6,4};
+            int[] a = { 2,4,34,2,6,4};
             Console.WriteLine(string.Join(" ",a));
             for(int i=0;i<a.Length;i++)
             {
@@ -208,7 +208,9 @@ namespace Myproject1.ArrayDemo
                     if(count>1)
                     {
                         Console.WriteLine(a[i]+" "+count);
+                       
                     }
+                   
                 }
                 
             }

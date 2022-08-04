@@ -6,36 +6,26 @@ namespace Myproject1
     {
         static void Main(string[] args)
         {
-            int[] a = { 2, 4, 34, 5, 6, 4 };
+            int[] a = { 2, 4, 34, 2, 6, 4 };
+            int[] result = {0,0,0,0,0,0};
+            int[] countarr = { 0,0,0,0,0,0};
             Console.WriteLine(string.Join(" ", a));
             for (int i = 0; i < a.Length; i++)
             {
                 int count = 1;
-                bool isvisited = false;
-                for (int k = i; k > 0; k--)
+                for (int j=i+1;j<a.Length;j++)
                 {
-                    if (a[i] == a[k])
+                    
+                    if(a[i]==a[j])
                     {
-                        isvisited = true;
-                        break;
+                        count++;
                     }
+                     
                 }
-                if (isvisited == false)
-                {
-                    for (int j = i + 1; j < a.Length; j++)
-                    {
-                        if (a[i] == a[j])
-                        {
-                            count++;
-                        }
-                    }
-                    Console.WriteLine(a[i] + " " + count);
-                    if (count > 1)
-                    {
-                        Console.WriteLine(a[i] + " " + count);
-                    }
-                }
+                result[i] = a[i];
+                countarr[i] = count;
 
+                Console.WriteLine("fre of "+a[i]+ " is "+count);
             }
         }
     }

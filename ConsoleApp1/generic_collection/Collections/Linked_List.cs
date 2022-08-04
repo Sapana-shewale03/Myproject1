@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using a1 = System.Collections.ArrayList;
 
 namespace Advancecsharp.Collections
 {
@@ -38,6 +39,14 @@ namespace Advancecsharp.Collections
             Console.WriteLine("last occurance " + y.Value);
             lll.Remove(400);
             foreach(int d in lll)
+                Console.WriteLine(d);
+
+            a1 ob = new a1();
+            List<int> l = new List<int>() { 11,56,33,98,567};
+            l.Sort();
+           l.Reverse();
+            l.RemoveRange(1, 3);
+            foreach (int d in l)
                 Console.WriteLine(d);
 
 

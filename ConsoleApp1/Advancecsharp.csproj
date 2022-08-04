@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-	  <startupobject>Advancecsharp.Collections.Dictonary_demo</startupobject>
+	  <startupobject>Advancecsharp.exception_handling.PB_CustomeException</startupobject>
 
   </PropertyGroup>
  <ItemGroup>

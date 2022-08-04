@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <startupobject>Myproject1.demo</startupobject>
+	  <startupobject>Myproject1.stringDemos.coprime</startupobject>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="array_string\" />

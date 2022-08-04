@@ -331,14 +331,14 @@ namespace Advancecsharp
         {
             static void Main(string[] args)
             {
-                LinkedList<Emplinked> e = new LinkedList<Emplinked>();
-                e.AddLast(new Emplinked(1, "raj", "math"));
-                e.AddLast(new Emplinked(2, "rom", "sci"));
-                e.AddLast(new Emplinked(4, "bhog", "eng"));
-                e.AddLast(new Emplinked(5, "shyam", "electric"));
-                e.AddLast(new Emplinked(6, "som", "math"));
-                e.AddLast(new Emplinked(8, "ram", "sci"));
-                e.AddLast(new Emplinked(10, "rutu", "math"));
+                List<Emplinked> e = new List<Emplinked>();
+                e.Add(new Emplinked(1, "raj", "math"));
+                e.Add(new Emplinked(2, "rom", "sci"));
+                e.Add(new Emplinked(4, "bhog", "eng"));
+                e.Add(new Emplinked(5, "shyam", "electric"));
+                e.Add(new Emplinked(6, "som", "math"));
+                e.Add(new Emplinked(8, "ram", "sci"));
+                e.Add(new Emplinked(10, "rutu", "math"));
                 string dname = "";
                 foreach (Emplinked m in e)
                 {
@@ -355,8 +355,21 @@ namespace Advancecsharp
                         Console.WriteLine(m);
                     }
                 }
+                for(int i=0;i<e.Count;i++)
+                {
+                Emplinked ee = e.ElementAt(i);
+                if(ee.dep1==dname)
+                {
+                    e.Remove(ee);
+                    i--;
+                }
+                }
+                Console.WriteLine("***************");
+                foreach(Emplinked n in e)
+                Console.WriteLine(n);
             
-        }
+            
+            }
         }
         //////17.use multiple catch block
         class exception_mul_catch
@@ -417,6 +430,7 @@ namespace Advancecsharp
                 {
                     Console.WriteLine(one.Message);
                 }
+            
                 Console.WriteLine("End of the program");
                 Console.ReadKey();
             }
