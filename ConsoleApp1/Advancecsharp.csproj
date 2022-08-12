@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-	  <startupobject>Advancecsharp.exception_handling.PB_CustomeException</startupobject>
+	  <startupobject>Advancecsharp.Thread1.Class2</startupobject>
 
   </PropertyGroup>
  <ItemGroup>
